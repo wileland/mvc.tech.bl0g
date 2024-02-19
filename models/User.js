@@ -1,6 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
+// Removed the import that caused the conflict
 
 class User extends Model {
   checkPassword(loginPw) {
