@@ -73,3 +73,53 @@ Navigate to `http://localhost:3000` in your browser to view the application.
 ### Usage
 
 After setting up the application, you can use it by registering for an account and then logging in. This enables you to create, view, edit, and delete blog posts, as well as comment on posts made by other users.
+
+### File Structure-
+MVC.TECH.BLOG
+├── config
+│   └── connection.js
+├── controllers
+│   ├── api
+│   │   ├── index.js
+│   │   └── userRoutes.js
+│   ├── homeRoutes.js
+│   └── index.js
+├── db
+│   └── schema.sql
+├── models
+│   ├── Comment.js
+│   ├── Post.js
+│   └── User.js
+├── node_modules
+├── public
+│   ├── assets
+│   ├── css
+│   │   └── style.css
+│   ├── js
+│   │   ├── login.js
+│   │   ├── logout.js
+│   │   └── script.js
+│   └── index.html
+├── seeds
+│   ├── seed.js
+│   └── userData.json
+├── utils
+│   ├── auth.js
+│   └── helpers.js
+├── views
+│   ├── layouts
+│   │   └── main.handlebars
+│   ├── partials
+│   │   └── post.handlebars
+│   ├── dashboard.handlebars
+│   ├── homepage.handlebars
+│   └── login.handlebars
+├── .env
+├── .eslintrc.json
+├── .gitignore
+├── .prettierrc.json
+├── LICENSE
+├── package-lock.json
+├── package.json
+├── README.md
+└── server.js

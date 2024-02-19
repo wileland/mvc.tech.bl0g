@@ -1,0 +1,9 @@
+const bcrypt = require('bcrypt');
+const users = require('./userData.json');
+
+const saltRounds = 10;
+users.forEach(user => {
+  user.password = bcrypt.hashSync(user.password, saltRounds);
+});
+
+console.log(JSON.stringify(users, null, 2));
